@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import './Title.css';
+import Title from './Title';
+import Wrapper from './Wrapper';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title />
+      <Wrapper heading="sample wrapper component header">
+        <p>sample wrapper component content</p>
+        <p>this is another child of wrapper componnet</p>
+      </Wrapper>
     </div>
   );
 }
