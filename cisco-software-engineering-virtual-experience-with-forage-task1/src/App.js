@@ -1,16 +1,20 @@
 //import logo from './logo.svg';
 import React from 'react';
 import './App.css';
+import './Title-Style.css'
 import Title from './Title';
 import Wrapper from './Wrapper';
+import IpAddressInformation from './IpAddressInfo';
 
 function App() {
   return (
     <div className="App">
       <Title />
-      <Wrapper heading="sample wrapper component header">
-        <p>sample wrapper component content</p>
-        <p>this is another child of wrapper componnet</p>
+      <Wrapper heading="IPV6 Address">
+        <IpAddressInformation versionOfIP="ipv6"/>
+      </Wrapper>
+      <Wrapper heading="IPV4 Address">
+        <IpAddressInformation versionOfIP="ipv4"/>
       </Wrapper>
     </div>
   );
