@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Wrapper({heading, children}){
+function Wrapper({children}){
  return (
 <div className="wrapper">
     <div className="wrapper-content">
