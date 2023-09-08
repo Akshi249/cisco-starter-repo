@@ -1,7 +1,6 @@
 //import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-import './Title.css';
 import Title from './Title';
 import Wrapper from './Wrapper';
 
